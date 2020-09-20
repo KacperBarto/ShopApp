@@ -1,0 +1,40 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="firstName">First Name</label>
+    <input type="text" formControlName="firstName" id="firstName">
+    <label for="lastName">Last Name</label>
+    <input type="text" formControlName="lastName" id="lastName">
+    <input type="submit" value="Submit" [disabled]="!form.valid">
+  </form>
+  
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="e-mail">E-mail <span style="color: red">*</span></label>
+        <input type="email" class="form-control" formControlName="email" id="e-mail">
+      </div>
+    <div class="form-group">
+      <label for="firstName">First Name <span style="color: red">*</span></label>
+      <input type="text" class="form-control" formControlName="firstName" id="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name <span style="color: red">*</span></label>
+      <input type="text" class="form-control" formControlName="lastName" id="lastName">
+    </div>
+    <div class="form-group">
+        <label for="street">Street <span style="color: red">*</span></label>
+        <input type="text" class="form-control" formControlName="street" id="street">
+    </div>
+    <div class="form-group">
+        <label for="postCode">Post Code <span style="color: red">*</span></label>
+        <input type="text" class="form-control" formControlName="postCode" id="postCode">
+    </div>
+    <div class="form-group">
+        <label for="city">City <span style="color: red">*</span></label>
+        <input type="text" class="form-control" formControlName="city" id="city">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone number <span style="color: red">*</span></label>
+        <input type="phone" class="form-control" formControlName="phone" id="phone">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Submit" [disabled]="!form.valid">
+  </form>
