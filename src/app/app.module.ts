@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OrderFormComponent } from './order-form/order-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { OrderFormComponent } from './order-form/order-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
