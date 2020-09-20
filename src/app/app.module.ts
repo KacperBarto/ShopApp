@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { CartComponent } from './cart/cart.component';
     MainpageComponent,
     ProductsComponent,
     CartComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
