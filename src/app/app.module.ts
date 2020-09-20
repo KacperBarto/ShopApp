@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { CartComponent } from './cart/cart.component';
     MainpageComponent,
     ProductsComponent,
     CartComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
