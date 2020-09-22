@@ -7,12 +7,18 @@
 
 .wrap {
     display: flex;
-    justify-content: space-evenly;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar-expand-lg {
     flex-flow: nowrap;
     justify-content: space-between;
+}
+
+.nav-item {
+    padding-right: 18px;
+}
+.nav-item:last-child {
+    padding: 0px;
 }
