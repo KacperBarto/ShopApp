@@ -5,7 +5,20 @@
     color: goldenrod
 }
 
-.navbar .navbar-nav {
-    float: none;
-  }
-  
+.wrap {
+    display: flex;
+    margin-right: auto;
+}
+
+.navbar-expand-lg {
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding-right: 30px;
+}
+
+.nav-item:last-child {
+    padding: 0px;
+}
