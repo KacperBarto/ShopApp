@@ -1,7 +1,7 @@
 [
     {
         "ID": 1,
-        "title": "Glenlivet 15",
+        "name": "Glenlivet 15",
         "description": "cos tam cos tam",
         "category": "Whisky",
         "price": 150,
@@ -11,7 +11,7 @@
     }, 
     {
         "ID": 2,
-        "title": "Absolut Pear",
+        "name": "Absolut Pear",
         "description": "cos tam cos tam",
         "category": "Vodka",
         "price": 130,
@@ -21,7 +21,7 @@
     },
     {
         "ID": 3,
-        "title": "Jack Daniels",
+        "name": "Jack Daniels",
         "description": "cos tam cos tam",
         "category": "Whisky",
         "price": 110,
@@ -31,7 +31,7 @@
     },
     {
         "ID": 4,
-        "title": "Belvedere",
+        "name": "Belvedere",
         "description": "cos tam cos tam",
         "category": "Vodka",
         "price": 160,
@@ -41,7 +41,7 @@
     },
     {
         "ID": 5,
-        "title": "Archers",
+        "name": "Archers",
         "description": "cos tam cos tam",
         "category": "Liquer",
         "price": 90,
@@ -51,7 +51,7 @@
     },
     {
         "ID": 6,
-        "title": "Don Julio",
+        "name": "Don Julio",
         "description": "cos tam cos tam",
         "category": "Tequilla",
         "price": 200,
@@ -61,7 +61,7 @@
     },
     {
         "ID": 7,
-        "title": "Glenkinche 12",
+        "name": "Glenkinche 12",
         "description": "cos tam cos tam",
         "category": "Whisky",
         "price": 140,
@@ -71,7 +71,7 @@
     },
     {
         "ID": 8,
-        "title": "Singleton",
+        "name": "Singleton",
         "description": "cos tam cos tam",
         "category": "Whisky",
         "price": 130,
@@ -82,7 +82,7 @@
 
     {
         "ID": 9,
-        "title": "Glenlivet 12",
+        "name": "Glenlivet 12",
         "description": "cos tam cos tam",
         "category": "Whisky",
         "price": 130,
@@ -92,7 +92,7 @@
     },
     {
         "ID": 10,
-        "title": "Glenlivet 18",
+        "name": "Glenlivet 18",
         "description": "cos tam cos tam",
         "category": "Rum",
         "price": 100,

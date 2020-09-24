@@ -10,7 +10,7 @@ import { map, tap } from 'rxjs/operators';
 })
 
 export class ProductApiService {
-  url = 'assets/data/spirits.json'  
+  url = 'assets/data/spirits.json';
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
@@ -19,7 +19,6 @@ export class ProductApiService {
   getProduct(id: number): Observable<Product> {
     return this.getProducts()
       .pipe(
-        tap(console.log),
         map((res: Product[]) => res.find(product => product.ID === id)));
   }
 }
