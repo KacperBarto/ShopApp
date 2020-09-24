@@ -2,6 +2,7 @@ import { Product } from './../../models/product.interaface';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
+import { map, tap } from 'rxjs/operators';
 
 
 @Injectable({
@@ -14,6 +15,12 @@ export class ProductApiService {
 
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(`${this.url}`);
+  }
+  getProduct(id: number): Observable<Product> {
+    return this.getProducts()
+      .pipe(
+        tap(console.log),
+        map((res: Product[]) => res.find(product => product.ID === id)));
   }
 }
  

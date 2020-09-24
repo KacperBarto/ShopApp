@@ -18,6 +18,12 @@ export class ProductsComponent implements OnInit {
     .subscribe((res: Product[]) => { 
       console.log(res); 
     });
+    this.productSubs = this.ProductApiService.getProduct(2) 
+    .subscribe((res: Product) => { 
+      console.log(res); 
+    });
+    
+    
   }
 
 }
