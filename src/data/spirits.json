@@ -1,0 +1,118 @@
+[
+    {
+        "ID": 1,
+        "title": "Glenlivet 15",
+        "description": "cos tam cos tam",
+        "category": "Whisky",
+        "price": 150,
+        "isOnSale": true,
+        "isInStock": true,
+        "isNew": false,
+        "photo": "asd"
+    }, 
+    {
+        "ID": 2,
+        "title": "Absolut Pear",
+        "description": "cos tam cos tam",
+        "category": "Vodka",
+        "price": 130,
+        "isOnSale": false,
+        "isInStock": true,
+        "isNew": false,
+        "photo": ""
+    },
+    {
+        "ID": 3,
+        "title": "Jack Daniels",
+        "description": "cos tam cos tam",
+        "category": "Whisky",
+        "price": 110,
+        "isOnSale": false,
+        "isInStock": false,
+        "isNew": false,
+        "photo": ""
+    },
+    {
+        "ID": 4,
+        "title": "Belvedere",
+        "description": "cos tam cos tam",
+        "category": "Vodka",
+        "price": 160,
+        "isOnSale": true,
+        "isInStock": false,
+        "isNew": false,
+        "photo": ""
+    },
+    {
+        "ID": 5,
+        "title": "Archers",
+        "description": "cos tam cos tam",
+        "category": "Liquer",
+        "price": 90,
+        "isOnSale": true,
+        "isInStock": true,
+        "isNew": true,
+        "photo": ""
+    },
+    {
+        "ID": 6,
+        "title": "Don Julio",
+        "description": "cos tam cos tam",
+        "category": "Tequilla",
+        "price": 200,
+        "isOnSale": true,
+        "isInStock": false,
+        "isNew": false,
+        "photo": ""
+    },
+    {
+        "ID": 7,
+        "title": "Glenkinche 12",
+        "description": "cos tam cos tam",
+        "category": "Whisky",
+        "price": 140,
+        "isOnSale": false,
+        "isInStock": true,
+        "isNew": false,
+        "photo": ""
+    },
+    {
+        "ID": 8,
+        "title": "Singleton",
+        "description": "cos tam cos tam",
+        "category": "Whisky",
+        "price": 130,
+        "isOnSale": false,
+        "isInStock": true,
+        "isNew": false,
+        "photo": ""
+    },
+
+    {
+        "ID": 9,
+        "title": "Glenlivet 12",
+        "description": "cos tam cos tam",
+        "category": "Whisky",
+        "price": 130,
+        "isOnSale": false,
+        "isInStock": true,
+        "isNew": false,
+        "photo": ""
+    },
+    {
+        "ID": 10,
+        "title": "Glenlivet 18",
+        "description": "cos tam cos tam",
+        "category": "Rum",
+        "price": 100,
+        "isOnSale": false,
+        "isInStock": true,
+        "isNew": false,
+        "photo": ""
+    }
+]
+
+
+
+
+
