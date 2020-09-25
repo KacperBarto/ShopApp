@@ -7,5 +7,5 @@ export interface Product {
     isOnSale: boolean;
     isInStock: boolean;
     isNew: boolean;
-    photo: string;
+    image: string;
 } 
