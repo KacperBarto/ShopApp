@@ -1,11 +1,11 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainpageComponent } from './mainpage/mainpage.component';
+import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { ProductsComponent } from './containers/products/products.component';
-import { OrderFormComponent } from './order-form/order-form.component';
+import { OrderFormComponent } from './components/order-form/order-form.component';
 import { CartItemsComponent } from './containers/cart-items/cart-items.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'main-page', component: MainpageComponent },

@@ -1,4 +1,4 @@
-import { Product } from './../../models/product.interaface';
+import { Product } from 'src/models/product.interaface';
 import { Component, Input } from '@angular/core';
 
 @Component({
