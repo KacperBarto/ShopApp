@@ -14,7 +14,6 @@ export class ProductsComponent implements OnInit {
   products: Observable<Product[]>;
 
   constructor(
-    // tslint:disable-next-line:no-shadowed-variable
     private ProductApiService: ProductApiService,
     private cartService: CartService,
   ) { }
