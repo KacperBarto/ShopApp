@@ -19,4 +19,8 @@ export class CartItemsComponent implements OnInit {
       console.log(res);
     }));
   }
+
+  handleDelete(id: number) {
+    this.cartService.deleteItem(id);
+  }
 }
