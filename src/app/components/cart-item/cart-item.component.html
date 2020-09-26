@@ -1,0 +1,11 @@
+<div *ngIf="cartItem" class="cart-item">
+    <img [src]="cartItem.image" [alt]="cartItem.title">
+    <span>{{ cartItem.title }}</span>
+</div>
+<div>
+    <a routerLink="/order-form">
+        <button type="button" class="btn btn-primary">
+            Zamawiam
+        </button>
+    </a>
+</div>

@@ -8,6 +8,7 @@
 .wrap {
     display: flex;
     margin-right: auto;
+    padding-left: 80px;
 }
 
 .navbar-expand-lg {
@@ -16,9 +17,10 @@
 }
 
 .nav-item {
-    padding-right: 30px;
+    padding-right: 40px;
+ 
 }
 
 .nav-item:last-child {
-    padding: 0px;
+    padding-right: 0px;
 }
