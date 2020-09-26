@@ -1,4 +1,4 @@
-<div class="cart-item">
+<div *ngIf="cartItem" class="cart-item">
     <img [src]="cartItem.image" [alt]="cartItem.title">
     <span>{{ cartItem.title }}</span>
 </div>

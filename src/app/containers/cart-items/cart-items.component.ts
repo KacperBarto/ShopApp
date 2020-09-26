@@ -2,6 +2,7 @@ import { Product } from 'src/models/product.interaface';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CartService } from '../../services/cart.service';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-cart-items',
@@ -14,6 +15,8 @@ export class CartItemsComponent implements OnInit {
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
-    this.cartItems$ = this.cartService.cartItems$;
+    this.cartItems$ = this.cartService.cartItems$.pipe(tap(res => {
+      console.log(res);
+    }));
   }
 }
