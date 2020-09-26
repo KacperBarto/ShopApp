@@ -10,19 +10,3 @@ export class CartItemComponent{
 
   @Input() cartItem: Product;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

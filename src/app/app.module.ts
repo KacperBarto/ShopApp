@@ -1,5 +1,4 @@
-import { Product } from './../models/product.interaface';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,6 +13,7 @@ import { ProductComponent } from './product/product.component';
 import { CartItemsComponent } from './containers/cart-items/cart-items.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +24,14 @@ import { CartItemComponent } from './cart-item/cart-item.component';
     OrderFormComponent,
     CartItemsComponent,
     CartItemComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
