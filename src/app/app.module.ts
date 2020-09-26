@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
 import { CartItemsComponent } from './containers/cart-items/cart-items.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CartItemComponent } from './cart-item/cart-item.component';
     OrderFormComponent,
     CartItemsComponent,
     CartItemComponent,
+    SearchResultsComponent,
 
   ],
   imports: [

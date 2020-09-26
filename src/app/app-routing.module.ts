@@ -1,3 +1,4 @@
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'order-form', component: OrderFormComponent },
   { path: '', redirectTo: 'main-page', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
+  { path: 'search-resutls/:value', component: SearchResultsComponent}
 ];
 
 @NgModule({
