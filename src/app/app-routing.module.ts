@@ -1,16 +1,18 @@
+import { CartItemComponent } from './cart-item/cart-item.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {MainpageComponent} from './mainpage/mainpage.component';
-import {ProductsComponent} from './containers/products/products.component';
-import {CartComponent} from './cart/cart.component';
-import {PageNotFoundComponent} from './page-not-found/page-not-found.component'
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { ProductsComponent } from './containers/products/products.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { OrderFormComponent } from './order-form/order-form.component';
+
 const routes: Routes = [
   { path: 'main-page', component: MainpageComponent },
-  { path: 'product', component: ProductsComponent },
-  { path: 'cart', component: CartComponent},
+  { path: 'products', component: ProductsComponent },
+  { path: 'cart', component: CartItemComponent},
   { path: '', redirectTo: 'main-page', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent}
-
+  { path: '**', component: PageNotFoundComponent },
+  { path: 'order-form', component: OrderFormComponent},
 ];
 
 @NgModule({

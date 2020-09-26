@@ -1,5 +1,5 @@
 import { Product } from './../../models/product.interaface';
-import { Component, Input} from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -7,5 +7,21 @@ import { Component, Input} from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent{
-  @Input() product: Product; 
+  @Input()
+  product: Product;
+
+  @Output()
+  addToCart: EventEmitter<Product> = new EventEmitter<Product>();
+
+  @Output()
+  removeFromCart: EventEmitter<number> = new EventEmitter<number>();
+
+  // tslint:disable-next-line:typedef
+  handleAddToCart(product: Product) {
+    this.addToCart.emit(product);
+  }
+
+  handleDelete(id: number): void {
+    this.removeFromCart.emit(id);
+  }
 }

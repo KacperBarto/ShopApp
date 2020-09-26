@@ -29,6 +29,7 @@ export class OrderFormComponent implements OnInit {
       street: new FormControl(''),
       postCode: new FormControl(''),
       city: new FormControl(''),
+      state: new FormControl(''),
       phone: new FormControl(''),
     }, { updateOn: 'blur' });
   }

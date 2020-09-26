@@ -1,6 +1,6 @@
 export interface Product {
     ID: number;
-    name: string;
+    title: string;
     description: string;
     category: string;
     price: number;
@@ -8,4 +8,4 @@ export interface Product {
     isInStock: boolean;
     isNew: boolean;
     image: string;
-} 
+}
