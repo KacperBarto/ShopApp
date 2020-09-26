@@ -1,17 +1,43 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col"><h3> {{ product.title }} </h3></th>
-      <th scope="col"><h4>Kategoria</h4></th>
-      <th scope="col"><h4>Cena</h4></th>
-      <th style="text-align: center;" scope="col"><button class="btn btn-primary" (click)="handleAddToCart(product)">Dodaj do koszyka</button></th>
+      <th scope="col">
+        <h3>
+          {{ product.title }}
+        </h3>
+      </th>
+      <th scope="col">
+        <h4>
+          Kategoria
+        </h4>
+      </th>
+      <th scope="col">
+        <h4>
+          Cena
+        </h4>
+      </th>
+      <th class="add-button" scope="col">
+        <button class="btn btn-primary" (click)="handleAddToCart(product)">
+          Dodaj do koszyka
+        </button>
+      </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th style="width: 55rem;" scope="row"><p style="font-weight:400; text-align: justify;">{{ product.description }}</p></th>
-      <td style="width: 5rem; text-align: center;">{{ product.category }}</td>
-      <td style="width: 5rem; text-align: center;">{{ product.price }}€</td>
-      <td style="text-align: center;"><img width="250" [src]="product.image" [alt]="product.title" ></td>
+      <th class="product-description-column" scope="row">
+        <p class="product-description">
+          {{ product.description }}
+        </p>
+      </th>
+      <td class="product-categoryPrice-column">
+        {{ product.category }}
+      </td>
+      <td class="product-categoryPrice-column">
+        {{ product.price }}€
+      </td>
+      <td style="text-align: center;">
+        <img class="image" [src]="product.image" [alt]="product.title" >
+      </td>
   </tbody>
 </table>
