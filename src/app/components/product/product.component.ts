@@ -6,6 +6,7 @@ import { Component, EventEmitter, Input, Output} from '@angular/core';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })
+  
 export class ProductComponent{
   @Input()
   product: Product;
@@ -16,8 +17,7 @@ export class ProductComponent{
   @Output()
   removeFromCart: EventEmitter<number> = new EventEmitter<number>();
 
-  // tslint:disable-next-line:typedef
-  handleAddToCart(product: Product) {
+  handleAddToCart(product: Product): void {
     this.addToCart.emit(product);
   }
 

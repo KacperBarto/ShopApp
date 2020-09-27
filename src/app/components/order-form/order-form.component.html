@@ -1,39 +1,53 @@
-<div style="margin-left: 30px; margin-right: 30px; width: 800px; margin-top: 20px;">
+<div class="container">
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputEmail4">E-mail<span style="color: red">*</span></label>
+        <label for="e-mail">
+          E-mail<span style="color: red">*</span>
+        </label>
         <input type="email" class="form-control" formControlName="email" id="e-mail">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputPassword4">Adres<span style="color: red">*</span></label>
-        <input type="text" class="form-control" formControlName="street" id="street">
+        <label for="street">
+          Adres<span style="color: red">*</span>
+        </label>
+        <input type="text" class="form-control" formControlName="street" id="street" placeholder="ulica, numer budynku, numer mieszkania">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputEmail4">Imię<span style="color: red">*</span></label>
+        <label for="firstName">
+          Imię<span style="color: red">*</span>
+        </label>
         <input type="text" class="form-control" formControlName="firstName" id="firstName">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputPassword4">Miasto<span style="color: red">*</span></label>
+        <label for="city">
+          Miasto<span style="color: red">*</span>
+        </label>
         <input type="text" class="form-control" formControlName="city" id="city">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputEmail4">Naziwsko<span style="color: red">*</span></label>
+        <label for="lastName">
+          Naziwsko<span style="color: red">*</span>
+        </label>
         <input type="text" class="form-control" formControlName="lastName" id="lastName">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputPassword4">Województwo<span style="color: red">*</span></label>
+        <label for="state">
+          Województwo<span style="color: red">*</span>
+        </label>
         <input type="text" class="form-control" formControlName="state" id="state">
       </div>
       <div class="form-group col-md-3">
-        <label for="inputPassword4">Telefon</label>
+        <label for="phone">
+          Telefon
+        </label>
         <input type="phone" class="form-control" formControlName="phone" id="phone">
       </div>
       <div class="form-group col-md-2">
         <label for="inputZip">Kod pocztowy</label>
-        <input type="text" class="form-control" formControlName="postCode" id="postCode">
+        <input type="text" class="form-control" formControlName="postCode" id="zip" placeholder="np. 09-900">
       </div>
     </div>
-    <input style="width: 100px;" type="Potwierdz" class="btn btn-primary" value="Wyślij" [disabled]="!form.valid">
+    <input type="button" class="btn btn-primary" value="Wyślij" [disabled]="!form.valid">
   </form>
 </div> 

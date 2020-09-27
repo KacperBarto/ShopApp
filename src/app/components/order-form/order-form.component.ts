@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -23,11 +23,11 @@ export class OrderFormComponent implements OnInit {
 
   getFormControls(): FormGroup {
     return new FormGroup({
-      email: new FormControl(''),
+      email: new FormControl('', [Validators.required]),
       firstName: new FormControl(''),
       lastName: new FormControl(''),
       street: new FormControl(''),
-      postCode: new FormControl(''),
+      zip: new FormControl(''),
       city: new FormControl(''),
       state: new FormControl(''),
       phone: new FormControl(''),
