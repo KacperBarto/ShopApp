@@ -1,5 +1,5 @@
 import { Product } from 'src/models/product.interaface';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cart-item',
@@ -15,4 +15,3 @@ export class CartItemComponent {
     this.onDelete.emit(id);
   }
 }
-
