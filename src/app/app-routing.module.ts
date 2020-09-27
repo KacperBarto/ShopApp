@@ -1,4 +1,4 @@
-
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
@@ -12,8 +12,10 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'cart', component: CartItemsComponent },
   { path: 'order-form', component: OrderFormComponent },
+  { path: 'search', component: SearchResultsComponent},
   { path: '', redirectTo: 'main-page', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: PageNotFoundComponent }
+  
 ];
 
 @NgModule({
