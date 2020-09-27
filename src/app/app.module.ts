@@ -6,12 +6,14 @@ import { CoreModule} from './core/core.module';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { NgModule, Component } from '@angular/core';
 import { OrderFormComponent } from './components/order-form/order-form.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ProductsComponent } from './containers/products/products.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { CartItemsComponent } from './containers/cart-items/cart-items.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SearchResultComponent } from './components/search-result/search-result.component';
 
 
 @NgModule({
@@ -24,12 +26,15 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     OrderFormComponent,
     CartItemsComponent,
     CartItemComponent,
+    SearchResultsComponent,
+    SearchResultComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
   ],
