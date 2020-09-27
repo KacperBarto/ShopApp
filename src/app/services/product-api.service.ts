@@ -19,7 +19,7 @@ export class ProductApiService {
   getProduct(id: number): Observable<Product> {
     return this.getProducts()
       .pipe(
-        map((res: Product[]) => res.find(product => product.ID === id)));
+        map((res: Product[]) => res.find(product => product.id === id)));
   }
 }
  
